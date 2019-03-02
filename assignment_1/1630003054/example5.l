@@ -13,4 +13,3 @@ temperature	return TOKTEMPERATURE;
 \n		/* ignore end of line */
 [ \t]+		/* ignore whitespace  */
 %%
-
