@@ -1,0 +1,20 @@
+1A)
+st artStart command received
+st1artsStop command received
+pjlk
+
+1B)
+The sample1 lexer will matches key words "start" and "stop" in the input string. And there are key words "start" and "stop" appear in the input string, so the lexer will change the key word to "Start command received\n" or "Start command received\n". Because both the strings contain a line break at the end, so it will break the line. Other part of the input text that do not match the key words will output without changes (including space, link break).
+
+1C)
+Start command received
+ Start command received
+ Stop command received
+ Start command received
+
+1D)
+Because there is a space between words which cannot process by lex and been print out directly.
+
+1E)
+When you enter the text "start start stop start" into the lexer, you also type in a '\n' when you hit the enter key, '\n' do not have a match in the lexer, so it will be print out without changes. Also the last entered word "start" will be output as "Start command received\n" with a line break at the end. So two line break together make a empty line at the bottom of the output.
+
