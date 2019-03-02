@@ -1,0 +1,8 @@
+5A)
+	Temperature set to 17
+	Heat turned off
+	Heat turned on
+5B)
+Explain in detail how the two characters "17" from the input are
+processed by the lexer and parser to be finally printed by the parser as an
+integer.

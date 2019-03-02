@@ -1,0 +1,6 @@
+6A)
+A zonefile name 'bar-foo' was encountered
+error: syntax error
+6B)
+
+6C)

@@ -1,4 +1,6 @@
 3A)
 EBRACE QUOTE WORD OBRACE FILENAME SEMICOLON EBRACE EBRACE
-
 3B)
+Such a configuration file is obviously not grammatically correct, but
+the lexer still accepts the input and does not generate any error.  Why?
+

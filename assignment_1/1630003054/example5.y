@@ -14,7 +14,7 @@ int yywrap()
 
 main()
 {
-	yyparse();
+	yyparse();    
 }
 
 %}
@@ -35,14 +35,17 @@ command:
 heat_switch:
 	TOKHEAT STATE
 	{
-		printf("\tHeat turned on or off\n");
+		if($2)
+			printf("\tHeat turned on\n");
+		else
+			printf("\tHeat turned off\n");
 	}
 	;
 
 target_set:
 	TOKTARGET TOKTEMPERATURE NUMBER
 	{
-		printf("\tTemperature set\n");
+		printf("\tTemperature set to %d\n", $3);
 	}
 	;
 

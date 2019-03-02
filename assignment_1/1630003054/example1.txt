@@ -17,4 +17,3 @@ Because there is a space between words which cannot process by lex and been prin
 
 1E)
 When you enter the text "start start stop start" into the lexer, you also type in a '\n' when you hit the enter key, '\n' do not have a match in the lexer, so it will be print out without changes. Also the last entered word "start" will be output as "Start command received\n" with a line break at the end. So two line break together make a empty line at the bottom of the output.
-
