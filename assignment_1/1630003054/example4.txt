@@ -1,6 +1,7 @@
 4A)
 	Temperature set
-	Temperature set
+-	Temperature set
 
 4B)
-Explain why in details, for each line of output.
+For the first line input "target temperature 17", the word "target" and "temperature" will be matched by the lexer and return as a token, the number "17" will be match and store into yylval and waiting to been use in YACC. In the YACC part, the YACC will try to match an existing rule, for the token, and the 'target_set' is the matched rule. Then "\tTemperature set\n" will be print out.
+For the second line input "target temperature -17", the word "target" and "temperature" will be matched by the lexer and return as a token, but when try to match the number as a number token, the character '-' didn't have match in the lexer, so the '-' will be directly print out, then "17" will be match as number and store into yylaval and pass to YACC just like first line text. Finally "\tTemperature set\n" will be print out.

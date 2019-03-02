@@ -2,5 +2,25 @@
 A zonefile name 'bar-foo' was encountered
 error: syntax error
 6B)
+Firstly, the lexer will read in all string of characters and match the character or word into a token and some group of characters (like FILENAME and WORD) will save into yylval for YACC to use.
+Secondly, the YACC will start to match the TOKENS to a rule:
+1. The match begins with the commands rule. And it matches nothing.
+2. Then, it matches command rule. command rule matches a zone_set rule.
+3. zone_set rule will match a ZONETOK then try to match a quotedname rule (match 'zone')
+4. quotedname rule match a QUOTE FILENAME QUOTE ordered tokens (match '"foo/bar"')
+5. Then, zone_set rule match a zonecontent rule
+6. zonecontent rule match an OBRACE then try to match a zonestatements rule (match '{')
+7. zonestatements rule will match a zonestatements rule which can be empty (match nothing)
+8. Then, zonestatements rule will match a zonestatement rule (match nothing)
+9. zonestatement rule match a FILETOK follow by a quotedname rule (match 'file')
+10. quotedname rule match a QUOTE FILENAME QUOTE ordered tokens (match '"bar-foo"')
+11. Because the match in step 10, a message '"A zonefile name '%s' was encountered\n"' is print out with the filename from the matched token in step 10.
+12. zonestatements rule match a semicolon (match ';')
+13. zonestatements rule match 'foo;', 'type hint;', '"foo/bar";' recursively.
+14. zonestatements rule try to match zonestatements rule (empty) and zonestatement rule
+15. zonestatement rule match a FILETOK (match 'file')
+16. zonestatement rule match a quotedname rule
+17. quotedname rule match a QUOTE (match '"'), But when YACC try to match a FILENAME token, a WORD token is given (word 'foo'). Because the WORD token is not quotedname rule wanted, a syntax error message ("error: syntax error") will print out and the program will be terminated.
 
 6C)
+The error handling quality of my program is not good. Because, once an error is thrown in my program, my program will report the error and terminate itself. My YACC's rules should be tolerated to the wrong token instead of terminating the program directly.

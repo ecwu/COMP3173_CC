@@ -7,4 +7,6 @@ WORD
 WORD
 
 2B)
-Explain why the output looks like this (including the empty lines).
+In example 2 lexer, there are two kinds of matching. One is for word (start with an English letter then followed by one or more letter and number, a single English letter is also a word), and one is for number (consists of one or more number). Because lexer will read in a string and match anything that matches the pattern. For the first line "ab12" it is a string start with English letter then follow by letter and number, with is a word, then the lexer will match the "ab12" until it meets the line break and execute the printf function and print out "WORD\n" with a line break at the end. Because there is no match for '\n' after "ab12" the lexer will directly print out the line break and make an empty line after the "WORD".
+The second line is "12ab", which begins with a number. So the lexer will match any number after the first number until it meets a character which is not a number. "12" follows the pattern for number and "NUMBER\n" is print out. Because the "ab" in this line is still in the buffer. The lexer will keep read in and match it as a word, "WORD\n" will print out and a '\n' which do not match anything will directly print and create an empty line.
+The third line "a12b" matches as a word just like the first line, so it will print out "WORD\n" with a line break which is entered by the user and create an empty line at the end.

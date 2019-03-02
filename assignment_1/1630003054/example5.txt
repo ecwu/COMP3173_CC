@@ -3,6 +3,4 @@
 	Heat turned off
 	Heat turned on
 5B)
-Explain in detail how the two characters "17" from the input are
-processed by the lexer and parser to be finally printed by the parser as an
-integer.
+When type in the string "target temperature 17". The first two words, "target" and "temperature" will be match as TOKTARGET and TOKTEMPERATURE, then the characters "17" will match the number pattern in the lexer. After match, characters "17" will convert into integer number and store into yylval variable and will be pass to YACC (can be later access via $3), then the lexer will return a NUMBER token. After the lexer processed all input string, YACC will match the tokens to the rule, tokens for "target temperature 17" match tokens TOKTARGET TOKTEMPERATURE NUMBER in "target_set". Thus the command inside the "target_set" will print out "\tTemperature set to %d\n" and the %d is the number matched in the laxer (which is 17 and store in $3). Finally the number 17 will be print out in "Temperature set to 17" format.
