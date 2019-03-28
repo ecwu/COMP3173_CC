@@ -8,7 +8,7 @@ ptn match_token(int expected_token){
     if(expected_token == next_input_token){
         return new_token_node(expected_token);
     }else{
-        raise_syntax_error(expected_token, next_input_token); 
+        raise_syntax_error(expected_token, next_input_token);
     }
 }
 ptn match_epsilon(void){
@@ -27,7 +27,7 @@ ptn match_L(void){
         ptn sc_char_node = match_token(';');
         ptn L_node = match_L();
         return new_L_node(D_node, sc_char_node, L_node);
-    } else if (lookahead_token == IF) {
+    } else if (lookahead_token == IF) { // IF? ID?
         ptn S_node = match_S();
         ptn sc_char_node = match_token(';');
         ptn L_node = match_L();
