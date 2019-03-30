@@ -1,0 +1,27 @@
+consuming input token: {
+match_token => new_token_node at line 9 in parser.c
+match_token <= new_token_node at line 9 in parser.c
+peeking at lookahead token: }
+match_epsilon => new_epsilon_node at line 15 in parser.c
+match_epsilon <= new_epsilon_node at line 15 in parser.c
+match_L => new_L_node at line 37 in parser.c
+  new_L_node => new_L3_node at line 403 in tree.c
+  new_L_node <= new_L3_node at line 403 in tree.c
+match_L <= new_L_node at line 37 in parser.c
+consuming input token: }
+match_token => new_token_node at line 9 in parser.c
+match_token <= new_token_node at line 9 in parser.c
+match_B => new_B_node at line 21 in parser.c
+match_B <= new_B_node at line 21 in parser.c
+peeking at lookahead token: End Of Input
+    B    
+    |    
++---+---+
+|   |   |
+|   |   |
+{   L3  }
+    |    
+    +    
+    |    
+    |    
+   eps   

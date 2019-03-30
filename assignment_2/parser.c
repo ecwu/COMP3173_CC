@@ -18,7 +18,7 @@ ptn match_B(void){
     ptn ob_char_node = match_token('{');
     ptn L_node = match_L();
     ptn cb_char_node = match_token('}');
-    return new_S_node(ob_char_node, L_node, cb_char_node);
+    return new_B_node(ob_char_node, L_node, cb_char_node);
 }
 ptn match_L(void){
     int lookahead_token = peek_at_next_input_token();
@@ -27,7 +27,7 @@ ptn match_L(void){
         ptn sc_char_node = match_token(';');
         ptn L_node = match_L();
         return new_L_node(D_node, sc_char_node, L_node);
-    } else if (lookahead_token == IF) { // IF? ID?
+    } else if (lookahead_token == IF || lookahead_token == ID) {
         ptn S_node = match_S();
         ptn sc_char_node = match_token(';');
         ptn L_node = match_L();
@@ -107,7 +107,7 @@ ptn match_F(void){
     } else if (lookahead_token == ID) {
         ptn ID_token_node = match_token(ID);
         return new_F_node(ID_token_node);
-    } else if (lookahead_token == NUM){
+    } else {
         ptn NUM_token_node = match_token(NUM);
         return new_F_node(NUM_token_node);
     }

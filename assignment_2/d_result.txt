@@ -1,0 +1,22 @@
+consuming input token: {
+match_token => new_token_node at line 9 in parser.c
+match_token <= new_token_node at line 9 in parser.c
+peeking at lookahead token: INT
+consuming input token: INT
+match_token => new_token_node at line 9 in parser.c
+match_token <= new_token_node at line 9 in parser.c
+consuming input token: ID
+match_token => new_token_node at line 9 in parser.c
+match_token <= new_token_node at line 9 in parser.c
+consuming input token: =
+match_token => new_token_node at line 9 in parser.c
+match_token <= new_token_node at line 9 in parser.c
+peeking at lookahead token: ;
+peeking at lookahead token: ;
+match_epsilon => new_epsilon_node at line 15 in parser.c
+match_epsilon <= new_epsilon_node at line 15 in parser.c
+match_Tp => new_Tp_node at line 97 in parser.c
+  new_Tp_node => new_Tp2_node at line 693 in tree.c
+  new_Tp_node <= new_Tp2_node at line 693 in tree.c
+match_Tp <= new_Tp_node at line 97 in parser.c
+match_T => new_T_node at line 86 in parser.c

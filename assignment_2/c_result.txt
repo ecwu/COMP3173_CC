@@ -1,0 +1,142 @@
+consuming input token: {
+match_token => new_token_node at line 9 in parser.c
+match_token <= new_token_node at line 9 in parser.c
+peeking at lookahead token: INT
+consuming input token: INT
+match_token => new_token_node at line 9 in parser.c
+match_token <= new_token_node at line 9 in parser.c
+consuming input token: ID
+match_token => new_token_node at line 9 in parser.c
+match_token <= new_token_node at line 9 in parser.c
+consuming input token: =
+match_token => new_token_node at line 9 in parser.c
+match_token <= new_token_node at line 9 in parser.c
+peeking at lookahead token: NUM
+consuming input token: NUM
+match_token => new_token_node at line 9 in parser.c
+match_token <= new_token_node at line 9 in parser.c
+match_F => new_F_node at line 112 in parser.c
+  new_F_node => new_F3_node at line 778 in tree.c
+  new_F_node <= new_F3_node at line 778 in tree.c
+match_F <= new_F_node at line 112 in parser.c
+peeking at lookahead token: ;
+match_epsilon => new_epsilon_node at line 15 in parser.c
+match_epsilon <= new_epsilon_node at line 15 in parser.c
+match_Tp => new_Tp_node at line 97 in parser.c
+  new_Tp_node => new_Tp2_node at line 693 in tree.c
+  new_Tp_node <= new_Tp2_node at line 693 in tree.c
+match_Tp <= new_Tp_node at line 97 in parser.c
+match_T => new_T_node at line 86 in parser.c
+match_T <= new_T_node at line 86 in parser.c
+peeking at lookahead token: ;
+match_epsilon => new_epsilon_node at line 15 in parser.c
+match_epsilon <= new_epsilon_node at line 15 in parser.c
+match_Ep => new_Ep_node at line 79 in parser.c
+  new_Ep_node => new_Ep2_node at line 603 in tree.c
+  new_Ep_node <= new_Ep2_node at line 603 in tree.c
+match_Ep <= new_Ep_node at line 79 in parser.c
+match_E => new_E_node at line 68 in parser.c
+match_E <= new_E_node at line 68 in parser.c
+match_D => new_D_node at line 45 in parser.c
+match_D <= new_D_node at line 45 in parser.c
+consuming input token: ;
+match_token => new_token_node at line 9 in parser.c
+match_token <= new_token_node at line 9 in parser.c
+peeking at lookahead token: ID
+peeking at lookahead token: ID
+consuming input token: ID
+match_token => new_token_node at line 9 in parser.c
+match_token <= new_token_node at line 9 in parser.c
+consuming input token: =
+match_token => new_token_node at line 9 in parser.c
+match_token <= new_token_node at line 9 in parser.c
+peeking at lookahead token: ID
+consuming input token: ID
+match_token => new_token_node at line 9 in parser.c
+match_token <= new_token_node at line 9 in parser.c
+match_F => new_F_node at line 109 in parser.c
+  new_F_node => new_F2_node at line 774 in tree.c
+  new_F_node <= new_F2_node at line 774 in tree.c
+match_F <= new_F_node at line 109 in parser.c
+peeking at lookahead token: ;
+match_epsilon => new_epsilon_node at line 15 in parser.c
+match_epsilon <= new_epsilon_node at line 15 in parser.c
+match_Tp => new_Tp_node at line 97 in parser.c
+  new_Tp_node => new_Tp2_node at line 693 in tree.c
+  new_Tp_node <= new_Tp2_node at line 693 in tree.c
+match_Tp <= new_Tp_node at line 97 in parser.c
+match_T => new_T_node at line 86 in parser.c
+match_T <= new_T_node at line 86 in parser.c
+peeking at lookahead token: ;
+match_epsilon => new_epsilon_node at line 15 in parser.c
+match_epsilon <= new_epsilon_node at line 15 in parser.c
+match_Ep => new_Ep_node at line 79 in parser.c
+  new_Ep_node => new_Ep2_node at line 603 in tree.c
+  new_Ep_node <= new_Ep2_node at line 603 in tree.c
+match_Ep <= new_Ep_node at line 79 in parser.c
+match_E => new_E_node at line 68 in parser.c
+match_E <= new_E_node at line 68 in parser.c
+match_S => new_S_node at line 62 in parser.c
+  new_S_node => new_S2_node at line 509 in tree.c
+  new_S_node <= new_S2_node at line 509 in tree.c
+match_S <= new_S_node at line 62 in parser.c
+consuming input token: ;
+match_token => new_token_node at line 9 in parser.c
+match_token <= new_token_node at line 9 in parser.c
+peeking at lookahead token: }
+match_epsilon => new_epsilon_node at line 15 in parser.c
+match_epsilon <= new_epsilon_node at line 15 in parser.c
+match_L => new_L_node at line 37 in parser.c
+  new_L_node => new_L3_node at line 403 in tree.c
+  new_L_node <= new_L3_node at line 403 in tree.c
+match_L <= new_L_node at line 37 in parser.c
+match_L => new_L_node at line 34 in parser.c
+  new_L_node => new_L2_node at line 419 in tree.c
+  new_L_node <= new_L2_node at line 419 in tree.c
+match_L <= new_L_node at line 34 in parser.c
+match_L => new_L_node at line 29 in parser.c
+  new_L_node => new_L1_node at line 415 in tree.c
+  new_L_node <= new_L1_node at line 415 in tree.c
+match_L <= new_L_node at line 29 in parser.c
+consuming input token: }
+match_token => new_token_node at line 9 in parser.c
+match_token <= new_token_node at line 9 in parser.c
+match_B => new_B_node at line 21 in parser.c
+match_B <= new_B_node at line 21 in parser.c
+peeking at lookahead token: End Of Input
+                               B                               
+                               |                               
++------------------------------+------------------------------+
+|                              |                              |
+|                              |                              |
+{                              L1                             }
+                               |                               
+               +--------------++--------------+                
+               |              |               |                
+               |              |               |                
+               D              ;               L2               
+               |                              |                
+    +----+--+--+-----+                    +---+-------+---+    
+    |    |  |        |                    |           |   |    
+    |    |  |        |                    |           |   |    
+   INT  ID  =        E                    S2          ;   L3   
+                     |                    |               |    
+                   +-+----+       +--+----+---+           +    
+                   |      |       |  |        |           |    
+                   |      |       |  |        |           |    
+                   T     E'2     ID  =        E          eps   
+                   |      |                   |                
+                +--+-+    +                +--+---+            
+                |    |    |                |      |            
+                |    |    |                |      |            
+                F3  T'2  eps               T     E'2           
+                |    |                     |      |            
+                +    +                   +-+-+    +            
+                |    |                   |   |    |            
+                |    |                   |   |    |            
+               NUM  eps                 F2  T'2  eps           
+                                         |   |                 
+                                         +   +                 
+                                         |   |                 
+                                         |   |                 
+                                        ID  eps                
